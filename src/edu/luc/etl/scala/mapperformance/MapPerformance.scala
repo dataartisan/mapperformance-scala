@@ -1,6 +1,6 @@
 package edu.luc.etl.scala.mapperformance
 
-import scala.util.Random
+import util.Random
 
 object MapPerformance {
 
@@ -13,7 +13,7 @@ object MapPerformance {
 
   def checkArgs(n: Int, d: Int, k1: Int, k2: Int) = {
 	assert(0 <= d && d <= 100, "invalid percentage d")
-	assert(2 * n <= Math.pow(Byte.MaxValue - Byte.MinValue, k2 - k1), "insufficient key range")
+	assert(2 * n <= math.pow(Byte.MaxValue - Byte.MinValue, k2 - k1), "insufficient key range")
   }
 }
 
